@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- index.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        #scoreboard {
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        #gameOver {
+            position: absolute;
+            display: none;
+            text-align: center;
+            font-size: 30px;
+            color: red;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="scoreboard">Score: <span id="score">0</span> | Lives: <span id="lives">3</span></div>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <script type="module" src="./main.js"></script>
+    <div id="gameOver"> Game Over </div>
+</body>
+</html>
